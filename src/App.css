@@ -1,0 +1,195 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0c0c0c;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c0c0c;
+}
+
+
+.main-heading {
+  padding: 20px;
+  color: white;
+  font-size: 70px;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite, waveAnimation 4s linear infinite;
+  display: inline-block;
+  position: relative;
+}
+
+@keyframes waveAnimation {
+  0% {
+    background-position: 0 100%;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.pokemon-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.pokemon-card {
+  background-color: rgb(59, 164, 155);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  text-transform: uppercase;
+}
+.pokemon-card h2 {
+  text-decoration: underline; 
+  font-size: 20px;
+  font-family: ui-sans-serif;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.1); /* Increase the scale for the zoom effect */
+}
+
+.grass {
+  background: linear-gradient(to bottom, #4caf50, #cadacb);
+}
+
+.fire{
+  background: linear-gradient(to bottom, #ff9800, #dccbc5);
+}
+
+.water {
+  background: linear-gradient(to bottom, #1773bd, #b5bfca);
+}
+
+.bug {
+  background: linear-gradient(to bottom, #9d6f29, #e0af27);
+}
+
+.poison {
+  background: linear-gradient(to bottom, #b96fa8, #a2b3c5);
+}
+
+.normal {
+  background: linear-gradient(to bottom, #bdb3a9, #f1f3f5);
+}
+
+.electric{
+  background: linear-gradient(to bottom, #c9d433, #f3f1c1);
+}
+
+.ground {
+  background: linear-gradient(to bottom, #c2b280, #b7c4b0);
+}
+
+.fairy {
+  background: linear-gradient(to bottom, #6f133e,#999491);
+}
+
+/* button */
+
+.grass-button{
+  background: #4caf50;
+}
+.fire-button {
+  background: #ff9800;
+}
+.water-button{
+  background: #1773bd;
+}
+.bug-button{
+  background: #9d6f29;
+}
+.poison-button{
+  background: #b96fa8;
+}
+.normal-button{
+  background: #bdb3a9;
+}
+.electric-button{
+  background: #c9d433;
+}
+.ground-button{
+  background: #c2b280;
+}
+.fairy-button{
+  background: #c25688;
+}
+
+
+.know-more-button {
+  /* //background: linear-gradient(to bottom, #ff4081, #d81b60); */
+  border: black 1px solid;
+  color: rgb(28, 24, 26);
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+} 
+
+.know-more-button:hover {
+  background: linear-gradient(to bottom, #7c3aa2, #ad699c);
+  color:yellow;
+
+}
+.pokemon-card:hover .know-more-button {
+  box-shadow: 10px 10px 15px rgba(20, 21, 21, 0.5);
+}
+
+
+.pokemon-number-circle {
+  width: 32px;
+  height: 30px;
+  background-color: #ddd;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  opacity: 50%;
+  
+}
+
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px; /* Adjust the margin as needed */
+}
+.load-more-button {
+  background-color: #eda33b;
+  border: none;
+  color: rgb(26, 23, 23);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
